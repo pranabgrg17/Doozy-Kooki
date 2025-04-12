@@ -43,19 +43,13 @@ button {
 }
 
 .pay-cash {
-    background-color: #4caf50;
+    background-color:blue;
     color: white;
 }
 
 .pay-esewa {
-    background-color: #2196F3;
+    background-color: #146617;
     color: white;
-}
-
-button[type="submit"] {
-    background-color: #008CBA; 
-    color: white;
-    width: 100%;
 }
 
 button:hover {
