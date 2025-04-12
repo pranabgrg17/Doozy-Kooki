@@ -1,0 +1,116 @@
+/* Cart.css */
+
+.cart {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.cart-items-title > p {
+    margin: 0;
+}
+
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-items-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cross {
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cart-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+}
+
+.cart-bottom {
+    margin: 50px 0; /* Reduced margins */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #666; /* Softened color for details */
+    font-size: 20px; /* Slightly larger font for totals */
+}
+
+.cart-total hr {
+    margin: 10px 0px;
+}
+
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: #007bff; /* Attractive button color */
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Larger button text */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.cart-total button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+    
+    .cart-items-title {
+        font-size: 16px;
+    }
+
+    .cart-items-item {
+        font-size: 14px;
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .cart-total button {
+        width: 100%;
+    }
+}

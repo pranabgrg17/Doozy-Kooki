@@ -1,0 +1,63 @@
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.place-order-left, .place-order-right {
+    width: 48%;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.table-selection {
+    margin-top: 15px;
+}
+
+.cart-total {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-cash {
+    background-color: #4caf50;
+    color: white;
+}
+
+.pay-esewa {
+    background-color: #2196F3;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #008CBA; 
+    color: white;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
